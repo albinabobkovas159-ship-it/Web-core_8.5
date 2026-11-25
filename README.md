@@ -23,4 +23,4 @@
 
 ## Демонстрация проекта
 
-https://albinabobkovas159-ship-it.github.io/Web-core_8.5/
+https://albinabobkovas159-ship-it.github.io/Web-core_8.7/
