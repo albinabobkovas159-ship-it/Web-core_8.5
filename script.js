@@ -25,3 +25,18 @@ function initSwiper() {
 initSwiper();
 
 window.addEventListener("resize", initSwiper);
+
+const showAll = document.querySelector(".brands__show-all");
+const brands = document.querySelector(".brands__swiper");
+const buttonText = document.querySelector(".brands__text");
+
+showAll.addEventListener("click", function () {
+  brands.classList.toggle("expanded");
+  showAll.classList.toggle("expanded");
+
+  if (brands.classList.contains("expanded")) {
+    buttonText.textContent = "Скрыть";
+  } else {
+    buttonText.textContent = "Показать всё";
+  }
+});

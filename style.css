@@ -75,8 +75,16 @@ button {
   height: 72px;
 }
 
+.brands__show-all {
+  display: none;
+}
+
+.brands__show-all.expanded .brands__arrow {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 767px) {
-  .brands__button:nth-child(n + 9) {
+  .brands__button:nth-child(n + 10) {
     display: none;
   }
 }
@@ -88,14 +96,37 @@ button {
   .heading {
     padding: 16px 0 16px 24px;
   }
+  .brands {
+    flex-direction: column;
+    align-items: start;
+  }
   .brands__swiper {
     display: grid;
     grid-template-columns: repeat(3, 240px);
     height: auto;
-    margin-left: 24px;
+    margin: 16px 0 0 24px;
   }
   .brands__button {
     width: 224px;
+  }
+  .brands__show-all {
+    display: flex;
+    margin: 24px 0 0 24px;
+  }
+  .brands__show-all.expanded {
+    margin-top: 46px;
+  }
+  .brands__text {
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: rgba(27, 28, 33, 1);
+  }
+  .brands__button:nth-child(n + 7) {
+    display: none;
   }
 }
 
@@ -115,5 +146,17 @@ button {
   .brands__button {
     width: 240px;
     align-self: center;
+  }
+  .brands__button:nth-child(n + 7) {
+    display: flex;
+  }
+  .brands__button:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .brands__swiper.expanded .brands__button {
+    display: flex;
   }
 }
