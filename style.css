@@ -1,18 +1,19 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("./TTLakes/TTLakes-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/TTLakes/TTLakes-Regular.ttf")
+    format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("./TTLakes/TTLakes-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("./TTLakes/TTLakes-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
@@ -23,9 +24,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "TT Lakes";
-  position: fixed;
-  left: 0;
+  font-family: "TT Lakes", sans-serif;
+  min-height: 100vh;
   background-color: rgba(248, 248, 248, 1);
 }
 
@@ -120,7 +120,6 @@ button {
     font-family: TT Lakes;
     font-weight: 500;
     font-size: 16px;
-    leading-trim: NONE;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: rgba(27, 28, 33, 1);
